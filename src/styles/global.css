@@ -4,10 +4,27 @@
 
 /* base layer */
 @layer base {
+  :root {
+    /* colors */
+    --mo-white: 255 255 255;
+    --mo-black: 0 0 0;
+    --mo-dark-100: 18 18 18;
+    --mo-dark-200: 14 25 41;
+    --mo-red-normal: 230 57 70;
+    --mo-red-dark: 183 45 56;
+    --mo-red-dark-hover: 160 39 49;
+    --mo-blue-dark-100: 29 53 87;
+    --mo-blue-dark-200: 46 73 111;
+    --mo-blue-light: 156 177 207;
+    --mo-cream-light: 250 248 243;
+  }
 }
 
 /* components layer */
 @layer components {
+  body {
+    @apply font-sans text-white bg-dark-200;
+  }
 }
 
 /* utilities layer */
