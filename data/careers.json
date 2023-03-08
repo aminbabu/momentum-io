@@ -1,0 +1,26 @@
+{
+  "careers": {
+    "coreValues": [
+      {
+        "icon": "../src/assets/images/our-values-icon-1.svg",
+        "title": "Craftsmanship",
+        "description": "Trusting our processes, mastery of our tools, understanding the data, and the intuition of our individuals."
+      },
+      {
+        "icon": "../src/assets/images/our-values-icon-2.svg",
+        "title": "Empathy",
+        "description": "It starts with the user, gathering experience, interviews, research, or testing — customized and cumulative to reveal greater truths."
+      },
+      {
+        "icon": "../src/assets/images/our-values-icon-3.svg",
+        "title": "Collaboration",
+        "description": "Co-create with our clients and team members. Fostering an environment where we can learn and grow from each other: knowledge sharing and brown bags."
+      },
+      {
+        "icon": "../src/assets/images/our-values-icon-4.svg",
+        "title": "Curiosity",
+        "description": "We channel what we’ve done, what we learn, and restless curiosity into better ways of doing what’s next."
+      }
+    ]
+  }
+}

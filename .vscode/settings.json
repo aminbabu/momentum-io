@@ -4,6 +4,9 @@
   "emmet.includeLanguages": {
     "javascript": "javascriptreact"
   },
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": true
+  },
   "css.validate": false,
   "tailwindCSS.emmetCompletions": true
 }

@@ -9,22 +9,20 @@ module.exports = {
   ],
   theme: {
     screens: {
-      xsm: "480px",
+      xs: "480px",
       sm: "576px",
       md: "768px",
       lg: "992px",
-      xl: "1200px",
-      "2xl": "1400px",
+      xl: "1240px",
     },
     container: {
       center: true,
       padding: {
-        DEFAULT: "1rem",
-        sm: "2rem",
-        lg: "3rem",
+        DEFAULT: "1.5rem",
       },
     },
     colors: {
+      transparent: "transparent",
       white: "rgb(var(--mo-white) / <alpha-value>)",
       black: "rgb(var(--mo-black) / <alpha-value>)",
       dark: {
