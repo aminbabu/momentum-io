@@ -1,12 +1,11 @@
 import { graphql, Link, useStaticQuery } from "gatsby";
-import React, { useEffect, useState } from "react";
+import React from "react";
+import { useSelector } from "react-redux";
 import logoDark from "../../assets/images/logo-dark.webp";
 import logoLight from "../../assets/images/logo.webp";
 
-const Navbar = ({ isDark, scrollPosition, openNav, onClick }) => {
-  const [theme, setTheme] = useState("dark");
-  const [logo, setLogo] = useState();
-
+const Navbar = ({ openNav, onClick }) => {
+  const { theme } = useSelector((state) => state.settings);
   const data = useStaticQuery(graphql`
     query {
       site {
@@ -18,41 +17,24 @@ const Navbar = ({ isDark, scrollPosition, openNav, onClick }) => {
   `);
   const { title } = data.site.siteMetadata;
 
-  // sticky header
-  useEffect(() => {
-    let theme;
-    if (isDark) {
-      theme = isDark;
-    } else {
-      theme = scrollPosition > 0 ? "dark" : "light";
-    }
-
-    setTheme(theme);
-  }, [theme, isDark, scrollPosition]);
-
-  // toggle logo
-  useEffect(() => {
-    const icon =
-      theme === "dark" ? (
-        <img
-          src={logoLight}
-          alt={title}
-          width="124"
-          height="32"
-          className="logo__light"
-        />
-      ) : (
-        <img
-          src={logoDark}
-          alt={title}
-          width="124"
-          height="32"
-          className="logo__dark"
-        />
-      );
-
-    setLogo(icon);
-  }, [theme, title]);
+  const logo =
+    theme === "dark" ? (
+      <img
+        src={logoLight}
+        alt={title}
+        width="124"
+        height="32"
+        className="logo__light"
+      />
+    ) : (
+      <img
+        src={logoDark}
+        alt={title}
+        width="124"
+        height="32"
+        className="logo__dark"
+      />
+    );
 
   return (
     <nav>

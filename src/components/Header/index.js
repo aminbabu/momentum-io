@@ -1,8 +1,10 @@
 import React, { useState } from "react";
+import { useSelector } from "react-redux";
 import Navbar from "./Navbar";
 import NavMenu from "./NavMenu";
 
-const Header = ({ isDark, scrollPosition }) => {
+const Header = () => {
+  const { scrollPosition } = useSelector((state) => state.settings);
   const [openNav, setOpenNav] = useState(false);
 
   return (
@@ -11,12 +13,7 @@ const Header = ({ isDark, scrollPosition }) => {
         openNav ? "active" : ""
       }`}
     >
-      <Navbar
-        isDark={isDark}
-        scrollPosition={scrollPosition}
-        openNav={openNav}
-        onClick={() => setOpenNav(!openNav)}
-      />
+      <Navbar openNav={openNav} onClick={() => setOpenNav(!openNav)} />
       <NavMenu />
     </header>
   );

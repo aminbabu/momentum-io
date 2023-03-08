@@ -1,13 +1,17 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
+import { useDispatch } from "react-redux";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
+import { getScrolledPosition } from "../redux/features/settingsSlice/settingsSlice";
 
-const Lauout = ({ isDark, children }) => {
-  const [scrollTop, setScrollTop] = useState(0);
+const Lauout = ({ children }) => {
+  const dispatch = useDispatch();
 
   useEffect(() => {
     const handleScroll = (event) => {
-      setScrollTop(window.scrollY);
+      const position = window.scrollY;
+
+      dispatch(getScrolledPosition(position));
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -20,7 +24,7 @@ const Lauout = ({ isDark, children }) => {
 
   return (
     <div className="App">
-      <Header isDark={isDark} scrollPosition={scrollTop} />
+      <Header />
       <main className="main__sections">{children}</main>
       <Footer />
     </div>

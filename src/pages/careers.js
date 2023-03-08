@@ -1,4 +1,6 @@
-import React from "react";
+import { Link } from "gatsby";
+import React, { useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
 import heroBG from "../assets/images/career-hero-bg.svg";
 import heroIMG from "../assets/images/career-hero-pic.webp";
 import findMomentumBG from "../assets/images/find-moment-bg.svg";
@@ -11,8 +13,20 @@ import icon2 from "../assets/images/our-values-icon-2.svg";
 import icon3 from "../assets/images/our-values-icon-3.svg";
 import icon4 from "../assets/images/our-values-icon-4.svg";
 import Layout from "../layouts/Layout";
+import { setTheme } from "../redux/features/settingsSlice/settingsSlice";
 
 const CareersPage = () => {
+  const dispatch = useDispatch();
+  const { scrollPosition } = useSelector((state) => state.settings);
+
+  useEffect(() => {
+    if (scrollPosition > 0) {
+      dispatch(setTheme("dark"));
+    } else {
+      dispatch(setTheme("light"));
+    }
+  }, [dispatch, scrollPosition]);
+
   return (
     <Layout>
       <section className="section__header career__hero relative">
@@ -218,9 +232,9 @@ const CareersPage = () => {
             <p class="section__tagline">Business Development</p>
             <div class="team__momentum__table">
               <div class="team__momentum__row">
-                <a href="#" class="team__momentum__title">
+                <Link href="#" class="team__momentum__title">
                   Market Business Development Manager (remote UK)
-                </a>
+                </Link>
                 <span class="team__momentum__text">
                   UNITED KINGDOM, ENGLAND, LONDON
                 </span>
@@ -231,33 +245,33 @@ const CareersPage = () => {
             <p class="section__tagline">Design</p>
             <div class="team__momentum__table">
               <div class="team__momentum__row">
-                <a href="#" class="team__momentum__title">
+                <Link href="#" class="team__momentum__title">
                   Principal Product Designer
-                </a>
+                </Link>
                 <span class="team__momentum__text">
                   UNITED STATES, CALIFORNIA, SAN MATEO
                 </span>
               </div>
               <div class="team__momentum__row">
-                <a href="#" class="team__momentum__title">
+                <Link href="#" class="team__momentum__title">
                   Product Designer
-                </a>
+                </Link>
                 <span class="team__momentum__text">
                   UNITED KINGDOM, ENGLAND, LONDON
                 </span>
               </div>
               <div class="team__momentum__row">
-                <a href="#" class="team__momentum__title">
+                <Link href="#" class="team__momentum__title">
                   Product Designer
-                </a>
+                </Link>
                 <span class="team__momentum__text">
                   UNITED STATES, CALIFORNIA, SAN MATEO
                 </span>
               </div>
               <div class="team__momentum__row">
-                <a href="#" class="team__momentum__title">
+                <Link href="#" class="team__momentum__title">
                   Senior Product Designer
-                </a>
+                </Link>
                 <span class="team__momentum__text">
                   UNITED STATES, CALIFORNIA, SAN MATEO
                 </span>
