@@ -35,7 +35,7 @@
   }
 
   .btn {
-    @apply inline-flex items-center justify-center text-center px-6 py-3 text-sm font-bold tracking-wider bg-transparent text-white border border-white border-opacity-50 hover:bg-white hover:text-dark-100 transition-colors duration-200;
+    @apply inline-flex items-center justify-center text-center px-4 md:px-6 py-2 md:py-3 text-sm font-bold tracking-wider bg-transparent text-white border border-white border-opacity-50 hover:bg-white hover:text-dark-100 transition-colors duration-200 cursor-pointer;
   }
 
   .btn__danger {
@@ -90,6 +90,22 @@
 
   .section__tagline {
     @apply text-sm font-bold text-red;
+  }
+
+  .form__control {
+    @apply appearance-none w-full px-4 py-2 text-base border-b border-solid border-b-cream border-opacity-20 placeholder:text-white bg-dark-100 font-semibold outline-none focus:border-opacity-60 transition-colors duration-300;
+  }
+
+  textarea.form__control {
+    @apply border border-solid border-cream border-opacity-20 rounded-md;
+  }
+
+  .btn__check {
+    @apply hidden;
+  }
+
+  .btn__check:checked + .btn {
+    @apply bg-white text-dark-100;
   }
 
   /* header main */
@@ -364,6 +380,39 @@
 
   .team__momentum__text {
     @apply text-xs lg:text-sm uppercase;
+  }
+
+  /* contact us */
+  .talk__together .widget__title {
+    @apply text-lg font-bold;
+  }
+
+  .contact__card {
+    @apply p-4 md:p-6 lg:p-8 mt-16 border border-solid border-cream border-opacity-20 rounded-lg;
+  }
+
+  .contact__card__title {
+    @apply text-[2rem] font-bold mb-8;
+  }
+
+  .our__offices__wrapper {
+    @apply mt-16 lg:mt-20;
+  }
+
+  .our__offices__img {
+    @apply mb-6;
+  }
+
+  .our__offices__img img {
+    @apply w-full;
+  }
+
+  .our__offices__title {
+    @apply text-base font-bold mb-2;
+  }
+
+  .our__offices__text {
+    @apply text-base leading-normal;
   }
 }
 
