@@ -1,0 +1,109 @@
+{
+  "insights": [
+    {
+      "id": 1,
+      "title": "This is DeFi's Moment",
+      "img": "https://assets.website-files.com/630c6469cf47ce0f4a6eb16e/637c344bca9d150b34efdb7d_63791831c7cfba0fd6659847_ball%20copy.webp",
+      "author": "David Thomson",
+      "date": "November 19, 2022",
+      "tags": ["Customer Experience", "Insights"]
+    },
+    {
+      "id": 2,
+      "title": "To Be or Not to Be: Why Agile is a Game-Changer for Telco",
+      "img": "https://assets.website-files.com/630c6469cf47ce0f4a6eb16e/63377a4a816bc92ba0c4e470_Blog_cover-p-800.png",
+      "author": "Maja Budinski | HTEC, Senior Content Writer",
+      "date": "September 29, 2022",
+      "tags": ["Strategy", "Insights"]
+    },
+    {
+      "id": 3,
+      "title": "Why Edge Computing is a Defining Moment for Telco",
+      "img": "https://assets.website-files.com/630c6469cf47ce0f4a6eb16e/63374ddae02ab67fdc3dffdc_Why-Edge-Computing-is-a-Defining-Moment-for-Telco-COVER-p-800.png",
+      "author": "Maja Budinski | HTEC, Senior Content Writer",
+      "date": "September 22, 2022",
+      "tags": ["Strategy", "Insights", "Event"]
+    },
+    {
+      "id": 4,
+      "title": "AI at Scale: How Media Companies can Make Every Customer Feel Like the Only Customer",
+      "img": "https://assets.website-files.com/630c6469cf47ce0f4a6eb16e/633766771b0d36f9f40b9a67_Cover%20-%20AI%20at%20Scale-%20How%20Media%20Companies%20Can%20Make%20Every%20Customer%20Feel%20like%20the%20Only%20Customer%20-p-800.png",
+      "author": "Maja Budinski | HTEC, Senior Content Writer",
+      "date": "September 15, 2022",
+      "tags": ["Insights", "Strategy"]
+    },
+    {
+      "id": 5,
+      "title": "Interview With Freek Roelofs: Technology Should Enable Simplicity—Leads to Trust, Part 1",
+      "img": "https://assets.website-files.com/630c6469cf47ce0f4a6eb16e/63374c4484ccadf4047ba44d_Freek-Roelofs-blog-cover-1185x628-p-800.png",
+      "author": "Maja Budinski | HTEC, Senior Content Writer",
+      "date": "September 14, 2022",
+      "tags": ["Strategy", "Culture"]
+    },
+    {
+      "id": 6,
+      "title": "Key Lessons Learned from Building an Enterprise-Scale Platform for the Maritime Industry",
+      "img": "https://assets.website-files.com/630c6469cf47ce0f4a6eb16e/633748ebd62f76912c9ea838_Cover_Blog-p-800.png",
+      "author": "Maja Budinski | HTEC, Senior Content Writer",
+      "date": "August 31, 2022",
+      "tags": ["Insights"]
+    },
+    {
+      "id": 7,
+      "title": "This is DeFi's Moment",
+      "img": "https://assets.website-files.com/630c6469cf47ce0f4a6eb16e/637c344bca9d150b34efdb7d_63791831c7cfba0fd6659847_ball%20copy.webp",
+      "author": "David Thomson",
+      "date": "November 19, 2022",
+      "tags": ["Customer Experience", "Insights"]
+    },
+    {
+      "id": 8,
+      "title": "To Be or Not to Be: Why Agile is a Game-Changer for Telco",
+      "img": "https://assets.website-files.com/630c6469cf47ce0f4a6eb16e/63377a4a816bc92ba0c4e470_Blog_cover-p-800.png",
+      "author": "Maja Budinski | HTEC, Senior Content Writer",
+      "date": "September 29, 2022",
+      "tags": ["Strategy", "Insights"]
+    },
+    {
+      "id": 9,
+      "title": "Why Edge Computing is a Defining Moment for Telco",
+      "img": "https://assets.website-files.com/630c6469cf47ce0f4a6eb16e/63374ddae02ab67fdc3dffdc_Why-Edge-Computing-is-a-Defining-Moment-for-Telco-COVER-p-800.png",
+      "author": "Maja Budinski | HTEC, Senior Content Writer",
+      "date": "September 22, 2022",
+      "tags": ["Strategy", "Insights", "Event"]
+    },
+    {
+      "id": 10,
+      "title": "AI at Scale: How Media Companies can Make Every Customer Feel Like the Only Customer",
+      "img": "https://assets.website-files.com/630c6469cf47ce0f4a6eb16e/633766771b0d36f9f40b9a67_Cover%20-%20AI%20at%20Scale-%20How%20Media%20Companies%20Can%20Make%20Every%20Customer%20Feel%20like%20the%20Only%20Customer%20-p-800.png",
+      "author": "Maja Budinski | HTEC, Senior Content Writer",
+      "date": "September 15, 2022",
+      "tags": ["Insights", "Strategy"]
+    },
+    {
+      "id": 11,
+      "title": "Interview With Freek Roelofs: Technology Should Enable Simplicity—Leads to Trust, Part 1",
+      "img": "https://assets.website-files.com/630c6469cf47ce0f4a6eb16e/63374c4484ccadf4047ba44d_Freek-Roelofs-blog-cover-1185x628-p-800.png",
+      "author": "Maja Budinski | HTEC, Senior Content Writer",
+      "date": "September 14, 2022",
+      "tags": ["Strategy", "Culture"]
+    },
+    {
+      "id": 12,
+      "title": "Key Lessons Learned from Building an Enterprise-Scale Platform for the Maritime Industry",
+      "img": "https://assets.website-files.com/630c6469cf47ce0f4a6eb16e/633748ebd62f76912c9ea838_Cover_Blog-p-800.png",
+      "author": "Maja Budinski | HTEC, Senior Content Writer",
+      "date": "August 31, 2022",
+      "tags": ["Insights"]
+    }
+  ],
+  "topics": [
+    "all",
+    "culture",
+    "customer experience",
+    "event",
+    "insights",
+    "news",
+    "strategy"
+  ]
+}

@@ -38,8 +38,16 @@
     @apply inline-flex items-center justify-center text-center px-4 md:px-6 py-2 md:py-3 text-sm font-bold tracking-wider bg-transparent text-white border border-white border-opacity-50 hover:bg-white hover:text-dark-100 transition-colors duration-200 cursor-pointer;
   }
 
+  .btn__sm {
+    @apply px-3 md:px-4 py-1 md:py-2;
+  }
+
   .btn__danger {
     @apply bg-red-dark border-red-dark hover:bg-red-dark-hover hover:border-red-dark-hover hover:text-white;
+  }
+
+  .btn__white {
+    @apply bg-white border-white text-dark-100 hover:bg-cream hover:border-cream hover:text-dark-100;
   }
 
   .icon {
@@ -408,11 +416,75 @@
   }
 
   .our__offices__title {
-    @apply text-base font-bold mb-2;
+    @apply text-base md:text-xl font-bold mb-2;
   }
 
   .our__offices__text {
     @apply text-base leading-normal;
+  }
+
+  .insights__ideas .title__1 {
+    @apply mb-16;
+  }
+
+  .insights__wrapper {
+    @apply mt-16;
+  }
+
+  .insights-header {
+    @apply mb-16;
+  }
+
+  .insight__button__group .btn {
+    @apply font-bold uppercase text-xs;
+  }
+
+  .insight__button__group .btn.active {
+    @apply bg-white text-dark-100;
+  }
+
+  .insights__item {
+    @apply no-underline relative text-white;
+  }
+
+  .insight__item__head {
+    @apply relative z-0 rounded-lg overflow-hidden h-60;
+  }
+
+  .insight__item__head img {
+    @apply absolute inset-0 w-full h-full object-cover object-center transition-all duration-300 ease-in;
+  }
+
+  .insight__item__head .insight__button__group {
+    @apply absolute inset-0 z-10 flex flex-wrap items-end content-end p-4 gap-2;
+  }
+
+  .insight__item__head .btn {
+    @apply shadow transition-all duration-300 hover:shadow-md;
+  }
+
+  .insights__body {
+    @apply pt-6;
+  }
+
+  .insights__title {
+    @apply text-2xl font-bold;
+  }
+
+  .insights__title * {
+    @apply inline-block transition-colors duration-300 text-white hover:text-opacity-70;
+  }
+
+  .insights__meta {
+    @apply text-base text-cream text-opacity-70;
+  }
+
+  .insights__date {
+    @apply text-sm text-white text-opacity-70;
+  }
+
+  .insights__item:hover img {
+    @apply scale-110;
   }
 }
 
