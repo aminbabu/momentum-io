@@ -1,11 +1,12 @@
 import { graphql, Link, useStaticQuery } from "gatsby";
 import React from "react";
+import data from "../../../data/header.json";
 import logo from "../../assets/images/icon-logo.svg";
-import { navLinks } from "../../utils/header";
 import SocialMedia from "../SocialMedia";
 
 const Footer = () => {
-  const data = useStaticQuery(graphql`
+  const { navLinks } = data.header;
+  const { site } = useStaticQuery(graphql`
     query {
       site {
         siteMetadata {
@@ -15,7 +16,7 @@ const Footer = () => {
     }
   `);
 
-  const { title } = data.site.siteMetadata;
+  const { title } = site.siteMetadata;
 
   return (
     <footer className="footer__main">

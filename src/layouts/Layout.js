@@ -20,7 +20,7 @@ const Lauout = ({ children }) => {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, []);
+  }, [dispatch]);
 
   return (
     <div className="App">
