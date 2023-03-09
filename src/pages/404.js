@@ -10,9 +10,15 @@ const NotFoundPage = () => {
     dispatch(setTheme("dark"));
   }, [dispatch]);
 
-  return <Layout>404 Not Found</Layout>;
+  return (
+    <Layout>
+      <section className="section__header">
+        <h1 className="text-5xl font-bold text-center">404 Not Found</h1>
+      </section>
+    </Layout>
+  );
 };
 
 export default NotFoundPage;
 
-export const Head = () => <title>Not Found Page</title>;
+export const Head = () => <title>404 Not Found Page</title>;
