@@ -93,7 +93,7 @@
   }
 
   .bg__holder {
-    @apply absolute inset-0 -z-0 bg-no-repeat bg-cover bg-center pointer-events-none;
+    @apply absolute inset-0 -z-10 bg-no-repeat bg-cover bg-center pointer-events-none;
   }
 
   .section__tagline {
@@ -616,7 +616,110 @@
   }
 
   .article__list .title__text {
-    display: none;
+    @apply hidden;
+  }
+
+  /* case study */
+  .case__study__header {
+    @apply flex flex-col justify-end min-h-[520px] md:min-h-[80vh] overflow-hidden;
+  }
+
+  .case__study__bg {
+    animation: scaleUp 3200ms ease-in-out 2000ms both;
+    @apply after:absolute after:inset-0 after:bg-gradient-to-b after:from-transparent after:to-[#000000cc];
+  }
+
+  @keyframes scaleUp {
+    50% {
+      transform: translate3d(0, -1rem, 0) scale3d(1.1, 1.1, 1);
+    }
+    100% {
+      transform: scale3d(1.1, 1.1, 1);
+    }
+  }
+
+  .case__study__meta {
+    @apply text-lg mb-6;
+  }
+
+  .case__overview__title {
+    @apply text-lg font-bold mb-5;
+  }
+
+  .case__overview__button__group {
+    @apply flex flex-col items-start gap-6;
+  }
+
+  .case__study__figure.light {
+    @apply bg-cream;
+  }
+
+  .case__study__figure img {
+    @apply w-full;
+  }
+
+  .case__study__figure .container {
+    @apply grid gap-24;
+  }
+
+  .momentum__challenge {
+    @apply border-b border-solid border-b-cream border-opacity-10;
+  }
+
+  .momentum__challenge__colored {
+    @apply bg-blue-dark-100;
+  }
+
+  .momentum__challenge .section__tagline {
+    @apply mb-8;
+  }
+
+  .strategy__research__icon {
+    @apply max-w-3xl mb-12;
+  }
+
+  .strateygy__research__item {
+    @apply grid gap-3;
+  }
+
+  .strateygy__research__item .section__tagline {
+    @apply mb-4;
+  }
+
+  .strategy__research .title__3 {
+    @apply max-w-md;
+  }
+
+  .strategy__research__wrapper {
+    @apply flex flex-wrap md:flex-nowrap gap-8 lg:gap-y-16 mt-12 md:mt-16 lg:mt-20;
+  }
+
+  .case__study__controls {
+    @apply mb-16 md:mb-20 lg:pb-24;
+  }
+
+  .case__study__controls .page__control {
+    @apply flex items-center gap-3 mt-8 text-lg md:text-xl lg:text-2xl no-underline text-white;
+  }
+
+  .case__study__controls .page__control.page__prev {
+    @apply justify-end;
+  }
+
+  .case__study__controls .page__control__text {
+    @apply transition-all duration-300;
+  }
+
+  .case__study__controls .page__control:hover .page__control__text {
+    @apply text-blue;
+  }
+
+  .other__work__item {
+    @apply rounded-lg overflow-hidden h-40 sm:h-52 lg:h-64 block;
+  }
+
+  .other__work__item img {
+    @apply w-full h-full object-cover object-center;
   }
 }
 

@@ -129,16 +129,16 @@ const CareersPage = () => {
         </div>
       </section>
 
-      <section class="section find__momentum relative">
+      <section className="section find__momentum relative">
         <div
-          class="bg__holder find__momentum__bg"
+          className="bg__holder find__momentum__bg"
           style={{ backgroundImage: `url(${findMomentumBG})` }}
         ></div>
-        <div class="container">
-          <div class="grid lg:grid-cols-12">
-            <div class="lg:col-span-5">
-              <p class="section__tagline">Our Team</p>
-              <h2 class="title__2">Find Your Momentum</h2>
+        <div className="container">
+          <div className="grid lg:grid-cols-12">
+            <div className="lg:col-span-5">
+              <p className="section__tagline">Our Team</p>
+              <h2 className="title__2">Find Your Momentum</h2>
               <p>
                 Our remote culture welcomes all talents with the expectation to
                 be your best self and be present and ready to collaborate
@@ -149,130 +149,130 @@ const CareersPage = () => {
               </p>
             </div>
           </div>
-          <div class="find__momentum__wrapper">
-            <div class="find__momentum__img">
+          <div className="find__momentum__wrapper">
+            <div className="find__momentum__img">
               <img src={findMomentumImg1} alt="" width="220" height="140" />
             </div>
-            <div class="find__momentum__img">
+            <div className="find__momentum__img">
               <img src={findMomentumImg2} alt="" width="220" height="140" />
             </div>
-            <div class="find__momentum__img">
+            <div className="find__momentum__img">
               <img src={findMomentumImg3} alt="" width="220" height="140" />
             </div>
-            <div class="find__momentum__img">
+            <div className="find__momentum__img">
               <img src={findMomentumImg4} alt="" width="220" height="140" />
             </div>
-            <div class="find__momentum__img">
+            <div className="find__momentum__img">
               <img src={findMomentumImg2} alt="" width="220" height="140" />
             </div>
-            <div class="find__momentum__img">
+            <div className="find__momentum__img">
               <img src={findMomentumImg3} alt="" width="220" height="140" />
             </div>
-            <div class="find__momentum__img">
+            <div className="find__momentum__img">
               <img src={findMomentumImg4} alt="" width="220" height="140" />
             </div>
-            <div class="find__momentum__img">
+            <div className="find__momentum__img">
               <img src={findMomentumImg2} alt="" width="220" height="140" />
             </div>
-            <div class="find__momentum__img">
+            <div className="find__momentum__img">
               <img src={findMomentumImg4} alt="" width="220" height="140" />
             </div>
-            <div class="find__momentum__img">
+            <div className="find__momentum__img">
               <img src={findMomentumImg2} alt="" width="220" height="140" />
             </div>
-            <div class="find__momentum__img">
+            <div className="find__momentum__img">
               <img src={findMomentumImg4} alt="" width="220" height="140" />
             </div>
-            <div class="find__momentum__img">
+            <div className="find__momentum__img">
               <img src={findMomentumImg4} alt="" width="220" height="140" />
             </div>
-            <div class="find__momentum__img">
+            <div className="find__momentum__img">
               <img src={findMomentumImg2} alt="" width="220" height="140" />
             </div>
-            <div class="find__momentum__img">
+            <div className="find__momentum__img">
               <img src={findMomentumImg3} alt="" width="220" height="140" />
             </div>
-            <div class="find__momentum__img">
+            <div className="find__momentum__img">
               <img src={findMomentumImg4} alt="" width="220" height="140" />
             </div>
-            <div class="find__momentum__img">
+            <div className="find__momentum__img">
               <img src={findMomentumImg2} alt="" width="220" height="140" />
             </div>
-            <div class="find__momentum__img">
+            <div className="find__momentum__img">
               <img src={findMomentumImg4} alt="" width="220" height="140" />
             </div>
-            <div class="find__momentum__img">
+            <div className="find__momentum__img">
               <img src={findMomentumImg2} alt="" width="220" height="140" />
             </div>
-            <div class="find__momentum__img">
+            <div className="find__momentum__img">
               <img src={findMomentumImg3} alt="" width="220" height="140" />
             </div>
-            <div class="find__momentum__img">
+            <div className="find__momentum__img">
               <img src={findMomentumImg4} alt="" width="220" height="140" />
             </div>
-            <div class="find__momentum__img">
+            <div className="find__momentum__img">
               <img src={findMomentumImg2} alt="" width="220" height="140" />
             </div>
-            <div class="find__momentum__img">
+            <div className="find__momentum__img">
               <img src={findMomentumImg3} alt="" width="220" height="140" />
             </div>
-            <div class="find__momentum__img">
+            <div className="find__momentum__img">
               <img src={findMomentumImg4} alt="" width="220" height="140" />
             </div>
-            <div class="find__momentum__img">
+            <div className="find__momentum__img">
               <img src={findMomentumImg4} alt="" width="220" height="140" />
             </div>
           </div>
         </div>
       </section>
 
-      <section class="team__momentum">
-        <div class="container">
-          <div class="team__momentum__item">
-            <p class="section__tagline">Business Development</p>
-            <div class="team__momentum__table">
-              <div class="team__momentum__row">
-                <Link href="#" class="team__momentum__title">
+      <section className="team__momentum">
+        <div className="container">
+          <div className="team__momentum__item">
+            <p className="section__tagline">Business Development</p>
+            <div className="team__momentum__table">
+              <div className="team__momentum__row">
+                <Link to="#" className="team__momentum__title">
                   Market Business Development Manager (remote UK)
                 </Link>
-                <span class="team__momentum__text">
+                <span className="team__momentum__text">
                   UNITED KINGDOM, ENGLAND, LONDON
                 </span>
               </div>
             </div>
           </div>
-          <div class="team__momentum__item">
-            <p class="section__tagline">Design</p>
-            <div class="team__momentum__table">
-              <div class="team__momentum__row">
-                <Link href="#" class="team__momentum__title">
+          <div className="team__momentum__item">
+            <p className="section__tagline">Design</p>
+            <div className="team__momentum__table">
+              <div className="team__momentum__row">
+                <Link to="#" className="team__momentum__title">
                   Principal Product Designer
                 </Link>
-                <span class="team__momentum__text">
+                <span className="team__momentum__text">
                   UNITED STATES, CALIFORNIA, SAN MATEO
                 </span>
               </div>
-              <div class="team__momentum__row">
-                <Link href="#" class="team__momentum__title">
+              <div className="team__momentum__row">
+                <Link to="#" className="team__momentum__title">
                   Product Designer
                 </Link>
-                <span class="team__momentum__text">
+                <span className="team__momentum__text">
                   UNITED KINGDOM, ENGLAND, LONDON
                 </span>
               </div>
-              <div class="team__momentum__row">
-                <Link href="#" class="team__momentum__title">
+              <div className="team__momentum__row">
+                <Link to="#" className="team__momentum__title">
                   Product Designer
                 </Link>
-                <span class="team__momentum__text">
+                <span className="team__momentum__text">
                   UNITED STATES, CALIFORNIA, SAN MATEO
                 </span>
               </div>
-              <div class="team__momentum__row">
-                <Link href="#" class="team__momentum__title">
+              <div className="team__momentum__row">
+                <Link to="#" className="team__momentum__title">
                   Senior Product Designer
                 </Link>
-                <span class="team__momentum__text">
+                <span className="team__momentum__text">
                   UNITED STATES, CALIFORNIA, SAN MATEO
                 </span>
               </div>

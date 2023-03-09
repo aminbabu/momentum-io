@@ -5,7 +5,7 @@ import img from "../assets/images/case-study-hero-bg.webp";
 const CaseStudy = () => {
   return (
     <article className="article__item">
-      <Link to="#" className="article__img">
+      <Link to="/case-study/" className="article__img">
         <img src={img} alt="" width="1200" height="720" />
       </Link>
       <h4 className="article__title">
@@ -13,7 +13,7 @@ const CaseStudy = () => {
           <span>Consumer Products</span>
           <span>Financial Services</span>
         </div>
-        <Link to="#">
+        <Link to="/case-study/">
           <span className="brand__name">Brokers.io</span>{" "}
           <span className="title__text">
             - Creating the Future of Accessible Crypto
