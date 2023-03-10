@@ -1,11 +1,9 @@
-import React, { useEffect, useState } from "react";
-import { useDispatch } from "react-redux";
+import React, { useState } from "react";
 import officeImg1 from "../assets/images/office-1.webp";
 import officeImg2 from "../assets/images/office-2.webp";
 import officeImg3 from "../assets/images/office-3.webp";
 import officeImg4 from "../assets/images/office-4.webp";
 import Layout from "../layouts/Layout";
-import { setTheme } from "../redux/features/settingsSlice/settingsSlice";
 
 const initialState = {
   name: "",
@@ -18,7 +16,6 @@ const initialState = {
 };
 
 const ContactPage = () => {
-  const dispatch = useDispatch();
   const [query, setQuery] = useState(initialState);
 
   const handleChange = (e) => {
@@ -30,10 +27,6 @@ const ContactPage = () => {
       return { ...prevQuery, [name]: value };
     });
   };
-
-  useEffect(() => {
-    dispatch(setTheme("dark"));
-  }, [dispatch]);
 
   const { name, country, email, phone, budget, source, message } = query;
 

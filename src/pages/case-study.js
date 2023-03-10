@@ -15,21 +15,25 @@ import strategyIcon from "../assets/images/strategy-research-icon.svg";
 import researchImg from "../assets/images/strategy-research-pic.webp";
 import Layout from "../layouts/Layout";
 
+const isBrowser = typeof window !== "undefined";
+
 const CaseStudyPage = () => {
   const [heroBg, setHeroBg] = useState(caseStudyBg);
 
   useEffect(() => {
-    const handlgeResize = () => {
-      const screen = window.innerWidth;
+    if (isBrowser) {
+      const handlgeResize = () => {
+        const screen = window.innerWidth;
 
-      if (screen <= 768) return setHeroBg(caseStudyBgSm);
+        if (screen <= 768) return setHeroBg(caseStudyBgSm);
 
-      setHeroBg(caseStudyBg);
-    };
+        setHeroBg(caseStudyBg);
+      };
 
-    handlgeResize();
+      handlgeResize();
 
-    window.addEventListener("resize", handlgeResize);
+      window.addEventListener("resize", handlgeResize);
+    }
   }, []);
 
   return (

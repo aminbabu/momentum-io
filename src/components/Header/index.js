@@ -4,7 +4,7 @@ import Navbar from "./Navbar";
 import NavMenu from "./NavMenu";
 
 const Header = () => {
-  const { scrollPosition } = useSelector((state) => state.settings);
+  const { scrollPosition } = useSelector((state) => state.siteConf);
   const [openNav, setOpenNav] = useState(false);
 
   return (

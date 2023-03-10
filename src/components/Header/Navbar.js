@@ -5,7 +5,7 @@ import logoDark from "../../assets/images/logo-dark.webp";
 import logoLight from "../../assets/images/logo.webp";
 
 const Navbar = ({ openNav, onClick }) => {
-  const { theme } = useSelector((state) => state.settings);
+  const { theme } = useSelector((state) => state.siteConf);
   const data = useStaticQuery(graphql`
     query {
       site {

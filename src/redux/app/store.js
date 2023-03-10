@@ -1,11 +1,7 @@
-import { configureStore } from "@reduxjs/toolkit";
-import settingsReducer from "../features/settingsSlice/settingsSlice";
+import { composeWithDevTools } from "@redux-devtools/extension";
+import { applyMiddleware, legacy_createStore as createStore } from "redux";
+import rootReducer from "./rootReducer";
 
-const store = configureStore({
-  reducer: {
-    settings: settingsReducer,
-  },
-  middleware: (getDefaultMiddleware) => [...getDefaultMiddleware()],
-});
+const store = createStore(rootReducer, composeWithDevTools(applyMiddleware()));
 
 export default store;

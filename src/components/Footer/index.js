@@ -1,7 +1,7 @@
 import { graphql, Link, useStaticQuery } from "gatsby";
 import React from "react";
-import data from "../../../data/header.json";
 import logo from "../../assets/images/icon-logo.svg";
+import data from "../../storage/header.json";
 import SocialMedia from "../SocialMedia";
 
 const Footer = () => {

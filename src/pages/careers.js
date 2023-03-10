@@ -13,17 +13,17 @@ import icon2 from "../assets/images/our-values-icon-2.svg";
 import icon3 from "../assets/images/our-values-icon-3.svg";
 import icon4 from "../assets/images/our-values-icon-4.svg";
 import Layout from "../layouts/Layout";
-import { setTheme } from "../redux/features/settingsSlice/settingsSlice";
+import { toggleTheme } from "../redux/features/sideConf/creators";
 
 const CareersPage = () => {
   const dispatch = useDispatch();
-  const { scrollPosition } = useSelector((state) => state.settings);
+  const { scrollPosition } = useSelector((state) => state.siteConf);
 
   useEffect(() => {
     if (scrollPosition > 0) {
-      dispatch(setTheme("dark"));
+      dispatch(toggleTheme("dark"));
     } else {
-      dispatch(setTheme("light"));
+      dispatch(toggleTheme("light"));
     }
   }, [dispatch, scrollPosition]);
 

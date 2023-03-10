@@ -2,24 +2,27 @@ import React, { useEffect } from "react";
 import { useDispatch } from "react-redux";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
-import { getScrolledPosition } from "../redux/features/settingsSlice/settingsSlice";
+import { changeScrollPosition } from "../redux/features/sideConf/creators";
 
-const Lauout = ({ children }) => {
+const isBrowser = typeof window !== "undefined";
+
+const Lauout = () => {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    const handleScroll = (event) => {
-      const position = window.scrollY;
+    if (isBrowser) {
+      // your code here
+      const handleScroll = (event) => {
+        dispatch(changeScrollPosition(window.scrollY));
+      };
 
-      dispatch(getScrolledPosition(position));
-    };
+      window.addEventListener("scroll", handleScroll);
+      handleScroll();
 
-    window.addEventListener("scroll", handleScroll);
-    handleScroll();
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
+      return () => {
+        window.removeEventListener("scroll", handleScroll);
+      };
+    }
   }, [dispatch]);
 
   return (

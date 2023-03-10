@@ -1,7 +1,7 @@
 import { useLocation } from "@reach/router";
 import { Link } from "gatsby";
 import React, { useEffect, useState } from "react";
-import data from "../../../data/header.json";
+import data from "../../storage/header.json";
 import SocialMedia from "../SocialMedia";
 
 const NavMenu = () => {

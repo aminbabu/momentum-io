@@ -1,12 +1,9 @@
-import React, { useEffect, useState } from "react";
-import { useDispatch } from "react-redux";
-import data from "../../data/work.json";
+import React, { useState } from "react";
 import CaseStudy from "../components/CaseStudy";
 import Layout from "../layouts/Layout";
-import { setTheme } from "../redux/features/settingsSlice/settingsSlice";
+import data from "../storage/work.json";
 
 const WorkPage = () => {
-  const dispatch = useDispatch();
   const [dropdown, setDropdown] = useState("ALL");
   const [articleType, setArticleType] = useState("card");
 
@@ -17,10 +14,6 @@ const WorkPage = () => {
   const handleArticleType = (value) => {
     setArticleType(value);
   };
-
-  useEffect(() => {
-    dispatch(setTheme("dark"));
-  }, [dispatch]);
 
   return (
     <Layout>

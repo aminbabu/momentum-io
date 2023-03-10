@@ -306,7 +306,7 @@
   }
 
   .career__hero__img {
-    @apply w-4/5 md:w-3/5 lg:w-1/2 max-w-4xl left-auto -bottom-[600px] sm:-bottom-[560px] lg:-bottom-[660px] bg-contain;
+    @apply w-4/5 md:w-3/5 lg:w-1/2 max-w-4xl left-auto -bottom-[600px] sm:-bottom-[560px] lg:-bottom-[660px] bg-contain z-10;
   }
 
   .our__values {

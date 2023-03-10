@@ -1,12 +1,9 @@
 import { Link } from "gatsby";
 import React, { useEffect, useState } from "react";
-import { useDispatch } from "react-redux";
-import data from "../../data/insights.json";
 import Layout from "../layouts/Layout";
-import { setTheme } from "../redux/features/settingsSlice/settingsSlice";
+import data from "../storage/insights.json";
 
 const InsightsPage = () => {
-  const dispatch = useDispatch();
   const [posts, setPosts] = useState([]);
   const { insights, topics } = data;
 
@@ -21,9 +18,8 @@ const InsightsPage = () => {
   };
 
   useEffect(() => {
-    dispatch(setTheme("dark"));
     setPosts(insights);
-  }, [dispatch, insights]);
+  }, [insights]);
 
   return (
     <Layout>
