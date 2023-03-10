@@ -1,10 +1,8 @@
 import React, { useState } from "react";
-import { useSelector } from "react-redux";
 import Navbar from "./Navbar";
 import NavMenu from "./NavMenu";
 
-const Header = () => {
-  const { scrollPosition } = useSelector((state) => state.siteConf);
+const Header = ({ theme, scrollPosition }) => {
   const [openNav, setOpenNav] = useState(false);
 
   return (
@@ -13,7 +11,11 @@ const Header = () => {
         openNav ? "active" : ""
       }`}
     >
-      <Navbar openNav={openNav} onClick={() => setOpenNav(!openNav)} />
+      <Navbar
+        theme={theme}
+        openNav={openNav}
+        onClick={() => setOpenNav(!openNav)}
+      />
       <NavMenu />
     </header>
   );

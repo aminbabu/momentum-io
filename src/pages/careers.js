@@ -1,6 +1,5 @@
 import { Link } from "gatsby";
-import React, { useEffect } from "react";
-import { useDispatch, useSelector } from "react-redux";
+import React, { useEffect, useState } from "react";
 import heroBG from "../assets/images/career-hero-bg.svg";
 import heroIMG from "../assets/images/career-hero-pic.webp";
 import findMomentumBG from "../assets/images/find-moment-bg.svg";
@@ -13,22 +12,39 @@ import icon2 from "../assets/images/our-values-icon-2.svg";
 import icon3 from "../assets/images/our-values-icon-3.svg";
 import icon4 from "../assets/images/our-values-icon-4.svg";
 import Layout from "../layouts/Layout";
-import { toggleTheme } from "../redux/features/sideConf/creators";
+
+const isBrowser = typeof window !== "undefined";
 
 const CareersPage = () => {
-  const dispatch = useDispatch();
-  const { scrollPosition } = useSelector((state) => state.siteConf);
+  const [theme, setTheme] = useState("light");
+  const [scrollPosition, setScrollPosition] = useState(0);
+
+  useEffect(() => {
+    if (isBrowser) {
+      // your code here
+      const handleScroll = (event) => {
+        setScrollPosition(window.scrollY);
+      };
+
+      window.addEventListener("scroll", handleScroll);
+      handleScroll();
+
+      return () => {
+        window.removeEventListener("scroll", handleScroll);
+      };
+    }
+  }, []);
 
   useEffect(() => {
     if (scrollPosition > 0) {
-      dispatch(toggleTheme("dark"));
+      setTheme("dark");
     } else {
-      dispatch(toggleTheme("light"));
+      setTheme("light");
     }
-  }, [dispatch, scrollPosition]);
+  }, [scrollPosition]);
 
   return (
-    <Layout>
+    <Layout theme={theme}>
       <section className="section__header career__hero relative">
         <div
           className="bg__holder career__hero__bg"

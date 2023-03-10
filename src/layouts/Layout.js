@@ -1,19 +1,17 @@
-import React, { useEffect } from "react";
-import { useDispatch } from "react-redux";
+import React, { useEffect, useState } from "react";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
-import { changeScrollPosition } from "../redux/features/sideConf/creators";
 
 const isBrowser = typeof window !== "undefined";
 
-const Lauout = ({ children }) => {
-  const dispatch = useDispatch();
+const Lauout = ({ theme, children }) => {
+  const [scrollPosition, setScrollPosition] = useState(0);
 
   useEffect(() => {
     if (isBrowser) {
       // your code here
       const handleScroll = (event) => {
-        dispatch(changeScrollPosition(window.scrollY));
+        setScrollPosition(window.scrollY);
       };
 
       window.addEventListener("scroll", handleScroll);
@@ -23,11 +21,11 @@ const Lauout = ({ children }) => {
         window.removeEventListener("scroll", handleScroll);
       };
     }
-  }, [dispatch]);
+  }, []);
 
   return (
     <div className="App">
-      <Header />
+      <Header theme={theme} scrollPosition={scrollPosition} />
       <main className="main__sections">{children}</main>
       <Footer />
     </div>
