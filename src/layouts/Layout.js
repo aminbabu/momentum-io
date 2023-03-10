@@ -6,7 +6,7 @@ import { changeScrollPosition } from "../redux/features/sideConf/creators";
 
 const isBrowser = typeof window !== "undefined";
 
-const Lauout = () => {
+const Lauout = ({ children }) => {
   const dispatch = useDispatch();
 
   useEffect(() => {

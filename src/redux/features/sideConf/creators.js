@@ -1,4 +1,4 @@
-import { THEME_CHANGED } from "./identifiers";
+import { SCROLL_POSTION_CHANGED, THEME_CHANGED } from "./identifiers";
 
 export const toggleTheme = (theme) => {
   return {
@@ -9,7 +9,7 @@ export const toggleTheme = (theme) => {
 
 export const changeScrollPosition = (position) => {
   return {
-    type: THEME_CHANGED,
+    type: SCROLL_POSTION_CHANGED,
     payload: position,
   };
 };

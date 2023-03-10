@@ -1,11 +1,12 @@
 import { graphql, Link, useStaticQuery } from "gatsby";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
 import logoDark from "../../assets/images/logo-dark.webp";
 import logoLight from "../../assets/images/logo.webp";
 
 const Navbar = ({ openNav, onClick }) => {
   const { theme } = useSelector((state) => state.siteConf);
+  const [logo, setLogo] = useState(null);
   const data = useStaticQuery(graphql`
     query {
       site {
@@ -17,8 +18,8 @@ const Navbar = ({ openNav, onClick }) => {
   `);
   const { title } = data.site.siteMetadata;
 
-  const logo =
-    theme === "dark" ? (
+  useEffect(() => {
+    const defaultLogo = (
       <img
         src={logoLight}
         alt={title}
@@ -26,7 +27,8 @@ const Navbar = ({ openNav, onClick }) => {
         height="32"
         className="logo__light"
       />
-    ) : (
+    );
+    const secondaryLogo = (
       <img
         src={logoDark}
         alt={title}
@@ -35,6 +37,13 @@ const Navbar = ({ openNav, onClick }) => {
         className="logo__dark"
       />
     );
+
+    if (theme === "dark") {
+      setLogo(defaultLogo);
+    } else {
+      setLogo(secondaryLogo);
+    }
+  }, [theme, title]);
 
   return (
     <nav>
