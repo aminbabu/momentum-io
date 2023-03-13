@@ -71,7 +71,7 @@ const ContactPage = () => {
                       rel="noreferrer"
                       className="widget__link"
                     >
-                      + 1650 753 8157
+                      &nbsp;+1650 753 8157
                     </a>
                   </li>
                   <li>
@@ -82,7 +82,7 @@ const ContactPage = () => {
                       rel="noreferrer"
                       className="widget__link"
                     >
-                      +44 203 818 5916
+                      &nbsp;+44 203 818 5916
                     </a>
                   </li>
                 </ul>

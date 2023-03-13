@@ -9,13 +9,13 @@ const Header = ({ theme, scrollPosition }) => {
     openNav ? "active" : ""
   }`;
 
+  const handleClick = () => {
+    setOpenNav(!openNav);
+  };
+
   return (
     <header className={`header__main ${dynamicClassName}`}>
-      <Navbar
-        theme={theme}
-        openNav={openNav}
-        onClick={() => setOpenNav(!openNav)}
-      />
+      <Navbar theme={theme} openNav={openNav} onClick={handleClick} />
       <NavMenu />
     </header>
   );

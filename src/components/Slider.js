@@ -1,9 +1,9 @@
 import { Splide } from "@splidejs/react-splide";
 import React from "react";
 
-const Slider = ({ options, label, children }) => {
+const Slider = ({ options, label, className, children }) => {
   return (
-    <Splide options={options} aria-label={label}>
+    <Splide className={className} options={options} aria-label={label}>
       {children}
     </Splide>
   );

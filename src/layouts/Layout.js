@@ -1,10 +1,11 @@
+import AOS from "aos";
 import React, { useEffect, useState } from "react";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 
 const isBrowser = typeof window !== "undefined";
 
-const Lauout = ({ theme, children }) => {
+const Lauout = ({ theme, footerClass, children }) => {
   const [scrollPosition, setScrollPosition] = useState(0);
 
   useEffect(() => {
@@ -23,11 +24,18 @@ const Lauout = ({ theme, children }) => {
     }
   }, []);
 
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
+
   return (
     <div className="App">
       <Header theme={theme} scrollPosition={scrollPosition} />
       <main className="main__sections">{children}</main>
-      <Footer />
+      <div className={footerClass}>
+        <Footer />
+      </div>
     </div>
   );
 };
