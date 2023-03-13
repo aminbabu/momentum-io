@@ -13,7 +13,7 @@ import leaderImg3 from "../assets/images/leader-3.png";
 import leaderImg4 from "../assets/images/leader-4.png";
 import leaderImg5 from "../assets/images/leader-5.png";
 import ratingImg from "../assets/images/services-rating.png";
-import NavTabs from "../components/Navtabs";
+import NavTabs from "../components/NavTabs";
 import Slider from "../components/Slider";
 import TestimonialCard from "../components/TestimonialCard";
 import Layout from "../layouts/Layout";
