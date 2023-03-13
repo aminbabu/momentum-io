@@ -24,8 +24,10 @@ const IndexPage = () => {
     perPage: 1,
     mediaQuery: "min",
     wheel: true,
-    wheelSleep: 1000,
-    speed: 1200,
+    wheelSleep: 1200,
+    drag: false,
+    snap: true,
+    speed: 1000,
     easing: "ease-in-out",
     destroy: true,
     breakpoints: {

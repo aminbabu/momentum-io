@@ -1040,6 +1040,22 @@
   .hero__contacts .widget__link {
     @apply text-sm font-bold;
   }
+
+  .home__slider .splide__arrow {
+    @apply w-16 h-16 bg-blue-dark-100 bg-opacity-50 transition-colors duration-300 hover:bg-opacity-100;
+  }
+
+  .home__slider .splide__arrow svg {
+    @apply fill-white w-6 h-auto;
+  }
+
+  .home__slider .splide__arrow--prev {
+    @apply rounded-l-none left-0;
+  }
+
+  .home__slider .splide__arrow--next {
+    @apply rounded-r-none right-0;
+  }
 }
 
 /* utilities layer */
