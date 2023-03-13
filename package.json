@@ -17,6 +17,7 @@
   "dependencies": {
     "@mdx-js/react": "^2.3.0",
     "@redux-devtools/extension": "^3.2.5",
+    "@splidejs/react-splide": "^0.7.12",
     "gatsby": "^5.7.0",
     "gatsby-omni-font-loader": "^2.0.2",
     "gatsby-plugin-image": "^3.7.0",
@@ -30,7 +31,8 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-helmet": "^6.1.0",
-    "react-redux": "^8.0.5"
+    "react-redux": "^8.0.5",
+    "react-tabs": "^6.0.0"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.13",

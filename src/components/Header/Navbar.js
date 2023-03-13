@@ -51,9 +51,7 @@ const Navbar = ({ theme, openNav, onClick }) => {
         </Link>
         <button
           type="button"
-          className={`menu__button ${
-            theme === "light" || openNav ? "light" : "dark"
-          }`}
+          className={`menu__button ${theme === "light" ? "light" : "dark"}`}
           onClick={onClick}
         >
           <span></span>
