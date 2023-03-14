@@ -111,7 +111,7 @@ const Footer = () => {
               >
                 An HTEC Group Company
               </Link>
-              <Link to="/privacy-policy" className="copyright__link">
+              <Link to="/privacy/" className="copyright__link">
                 Privacy Policy
               </Link>
             </div>

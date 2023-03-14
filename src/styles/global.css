@@ -1056,6 +1056,14 @@
   .home__slider .splide__arrow--next {
     @apply rounded-r-none right-0;
   }
+
+  .privacy__block {
+    @apply mb-12 md:mb-14;
+  }
+
+  .privacy__block .title__2 {
+    @apply mb-4;
+  }
 }
 
 /* utilities layer */
