@@ -12,6 +12,7 @@ import problemSolverImg from "../assets/images/problem-solver.png";
 import ratingImg from "../assets/images/testimonial-img.svg";
 import heroImg1 from "../assets/images/wheel-blue.svg";
 import heroImg2 from "../assets/images/wheel-strock.svg";
+import RegionalClock from "../components/RegionalClock";
 import Slider from "../components/Slider";
 import SocialMedia from "../components/SocialMedia";
 import Layout from "../layouts/Layout";
@@ -103,18 +104,16 @@ const IndexPage = () => {
                 </div>
               </div>
               <div className="timezone">
-                <div className="timezone__item">
-                  Silicon Valley <span className="time">10:31 PM</span>
-                </div>
-                <div className="timezone__item">
-                  New York <span className="time">1:31 AM</span>
-                </div>
-                <div className="timezone__item">
-                  London <span className="time">5:31 PM</span>
-                </div>
-                <div className="timezone__item">
-                  Belgrade <span className="time">6:31 PM</span>
-                </div>
+                <RegionalClock
+                  location="Silicon Valley"
+                  timezone="America/Los_Angeles"
+                />
+                <RegionalClock
+                  location="New York"
+                  timezone="America/New_York"
+                />
+                <RegionalClock location="London" timezone="Europe/London" />
+                <RegionalClock location="Belgrade" timezone="Europe/Belgrade" />
               </div>
             </div>
           </section>

@@ -1,4 +1,3 @@
-import AOS from "aos";
 import React, { useEffect, useState } from "react";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
@@ -22,11 +21,6 @@ const Lauout = ({ theme, footerClass, children }) => {
         window.removeEventListener("scroll", handleScroll);
       };
     }
-  }, []);
-
-  useEffect(() => {
-    AOS.init();
-    AOS.refresh();
   }, []);
 
   return (
