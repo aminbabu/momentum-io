@@ -140,6 +140,10 @@
     @apply text-lg md:text-xl lg:text-2xl mb-4;
   }
 
+  .link__danger {
+    @apply text-red hover:text-opacity-75;
+  }
+
   /* header main */
   .header__main {
     @apply transition-colors duration-300 fixed z-40 top-0 left-0 w-full;
