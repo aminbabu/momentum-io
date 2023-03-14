@@ -141,7 +141,7 @@
   }
 
   .link__danger {
-    @apply text-red hover:text-opacity-75;
+    @apply text-red hover:text-opacity-75 underline;
   }
 
   /* header main */

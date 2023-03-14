@@ -10,7 +10,7 @@ const PrivacyPage = () => {
           <div className="privacy__block">
             <h1 className="title__1">Privacy Policy</h1>
             <p className="mb-4">UPDATED September 16, 2022</p>
-            <p className="text-lg lg:text-xl xl:text-[1.375rem">
+            <p className="text-lg lg:text-xl xl:text-[1.375rem]">
               Our Company is part of Momentum Design Lab, LLC, which includes
               Momentum Design Lab and Momentum Design Lab, Ltd. This privacy
               policy will explain how our organization uses the personal data we
