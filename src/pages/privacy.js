@@ -18,7 +18,7 @@ const PrivacyPage = () => {
             </p>
           </div>
           <div className="privacy__block">
-            <h2 className="title__2">Information We Collect</h2>
+            <h2 className="title__3">Information We Collect</h2>
             <p>
               We do not collect personally identifiable information about you
               (your name, telephone, address, e-mail, etc.) unless you provide
@@ -33,7 +33,7 @@ const PrivacyPage = () => {
             </p>
           </div>
           <div className="privacy__block">
-            <h2 className="title__2">How We Use Your Information</h2>
+            <h2 className="title__3">How We Use Your Information</h2>
             <p className="mb-3">
               We use non-personally identifiable information to analyze site
               usage (aggregated information about which pages were visited by
@@ -74,7 +74,7 @@ const PrivacyPage = () => {
             </p>
           </div>
           <div className="privacy__block">
-            <h2 className="title__2">Our Use of Cookies and Web Beacons</h2>
+            <h2 className="title__3">Our Use of Cookies and Web Beacons</h2>
             <p className="mb-3">
               A cookie is a text-only file that a website transfers to the
               “cookies” file of your browser so that the website can remember
@@ -124,7 +124,7 @@ const PrivacyPage = () => {
             </p>
           </div>
           <div className="privacy__block">
-            <h2 className="title__2">
+            <h2 className="title__3">
               Disclosure of Information Collected to Third Parties
             </h2>
             <p>
@@ -134,7 +134,7 @@ const PrivacyPage = () => {
             </p>
           </div>
           <div className="privacy__block">
-            <h2 className="title__2">
+            <h2 className="title__3">
               Opt-out, Remove or Modify Information You Have Provided to Us?
             </h2>
             <p>
@@ -146,7 +146,7 @@ const PrivacyPage = () => {
             </p>
           </div>
           <div className="privacy__block">
-            <h2 className="title__2">Third Party Links</h2>
+            <h2 className="title__3">Third Party Links</h2>
             <p>
               In an attempt to provide you with increased value, we may include
               third party links on our site. These linked sites have separate
@@ -156,7 +156,7 @@ const PrivacyPage = () => {
             </p>
           </div>
           <div className="privacy__block">
-            <h2 className="title__2">Security</h2>
+            <h2 className="title__3">Security</h2>
             <p>
               We take commercially reasonable, industry standard steps to
               protect personal data from loss, misuse, and unauthorized access,
@@ -168,7 +168,7 @@ const PrivacyPage = () => {
             </p>
           </div>
           <div className="privacy__block">
-            <h2 className="title__2">Changes to Our Policy</h2>
+            <h2 className="title__3">Changes to Our Policy</h2>
             <p>
               We may contract with third-party service providers to assist us in
               better understanding our site visitors. These service providers
@@ -178,7 +178,7 @@ const PrivacyPage = () => {
             </p>
           </div>
           <div className="privacy__block">
-            <h2 className="title__2">Questions and Feedback</h2>
+            <h2 className="title__3">Questions and Feedback</h2>
             <p>
               We welcome your questions, feedback and concerns about privacy.
               Please contact us at:{" "}
@@ -188,18 +188,18 @@ const PrivacyPage = () => {
             </p>
           </div>
           <div className="privacy__block">
-            <h2 className="title__2">Online Policy Only</h2>
+            <h2 className="title__3">Online Policy Only</h2>
             <p>
               This Privacy Policy applies only to information collected through
               our website and not to information collected offline.
             </p>
           </div>
           <div className="privacy__block">
-            <h2 className="title__2">Your Consent</h2>
+            <h2 className="title__3">Your Consent</h2>
             <p>By using our website, you consent to our Privacy Policy.</p>
           </div>
           <div className="privacy__block">
-            <h2 className="title__2">Contacting Us</h2>
+            <h2 className="title__3">Contacting Us</h2>
             <p className="mb-4">
               If you have any questions or concerns regarding this Privacy
               Policy or our information practices, would like to update or
