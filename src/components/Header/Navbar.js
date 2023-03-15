@@ -5,6 +5,7 @@ import logoLight from "../../assets/images/logo.webp";
 
 const Navbar = ({ theme, openNav, onClick }) => {
   const [logo, setLogo] = useState(null);
+
   const data = useStaticQuery(graphql`
     query {
       site {

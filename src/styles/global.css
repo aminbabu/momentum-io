@@ -530,11 +530,15 @@
   }
 
   .work__filters__wrapper {
-    @apply flex items-center justify-between gap-4 border-y-2 border-solid border-y-white py-2.5 lg:py-4 text-sm uppercase font-bold;
+    @apply flex flex-wrap items-center justify-between gap-4 border-y-2 border-solid border-y-white py-2.5 lg:py-4 text-sm uppercase font-bold;
   }
 
   .work__filters__wrapper .left {
     @apply flex items-center gap-4;
+  }
+
+  .work__filters__wrapper .right {
+    @apply ml-auto;
   }
 
   .dropdown__wrapper {

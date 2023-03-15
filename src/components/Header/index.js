@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Navbar from "./Navbar";
 import NavMenu from "./NavMenu";
 
@@ -12,6 +12,14 @@ const Header = ({ theme, scrollPosition }) => {
   const handleClick = () => {
     setOpenNav(!openNav);
   };
+
+  useEffect(() => {
+    if (openNav) {
+      document.body.classList.add("overflow-hidden");
+    } else {
+      document.body.classList.remove("overflow-hidden");
+    }
+  }, [openNav]);
 
   return (
     <header className={`header__main ${dynamicClassName}`}>
