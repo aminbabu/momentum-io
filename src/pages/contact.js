@@ -3,6 +3,7 @@ import officeImg1 from "../assets/images/office-1.webp";
 import officeImg2 from "../assets/images/office-2.webp";
 import officeImg3 from "../assets/images/office-3.webp";
 import officeImg4 from "../assets/images/office-4.webp";
+import Calendly from "../components/Calendly";
 import Layout from "../layouts/Layout";
 
 const initialState = {
@@ -17,6 +18,7 @@ const initialState = {
 
 const ContactPage = () => {
   const [query, setQuery] = useState(initialState);
+  const [isOpen, setIsOpen] = useState(false);
 
   const handleChange = (e) => {
     const target = e.target;
@@ -26,6 +28,10 @@ const ContactPage = () => {
     setQuery((prevQuery) => {
       return { ...prevQuery, [name]: value };
     });
+  };
+
+  const handleCalendly = (value) => {
+    setIsOpen(value);
   };
 
   const { name, country, email, phone, budget, source, message } = query;
@@ -45,9 +51,11 @@ const ContactPage = () => {
               <button
                 type="button"
                 className="btn btn__danger rounded-full contact__btn__link"
+                onClick={() => handleCalendly(true)}
               >
                 Schedule a Meeting
               </button>
+              <Calendly isOpen={isOpen} handleCalendly={handleCalendly} />
             </div>
             <div className="lg:basis-5/12">
               <div className="widget__item">
