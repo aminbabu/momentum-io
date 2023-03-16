@@ -28,8 +28,11 @@ const ServicesPage = () => {
   const testimonialOptions = {
     perMove: 1,
     padding: { right: "15%" },
-    arrows: false,
+    arrows: true,
     pagination: false,
+    updateOnMove: true,
+    speed: 600,
+    ease: "ease-in-out",
     mediaQuery: "min",
     breakpoints: {
       0: {

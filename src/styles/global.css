@@ -144,6 +144,14 @@
     @apply text-red hover:text-opacity-75 underline;
   }
 
+  .App .splide__arrow {
+    @apply transition-all duration-300;
+  }
+
+  .App .splide__arrow:disabled {
+    @apply !opacity-0;
+  }
+
   /* header main */
   .header__main {
     @apply transition-colors duration-300 fixed z-40 top-0 left-0 w-full;
@@ -862,6 +870,18 @@
 
   .testimonial__designation {
     @apply text-lg font-bold mt-auto;
+  }
+
+  .testimonials .splide__arrow {
+    @apply bg-white rounded-none lg:w-10 lg:h-10;
+  }
+
+  .testimonials .splide__arrow--prev {
+    @apply left-0 rounded-r-full;
+  }
+
+  .testimonials .splide__arrow--next {
+    @apply right-0 rounded-l-full;
   }
 
   .services__industries {
