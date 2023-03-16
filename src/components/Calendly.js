@@ -1,6 +1,9 @@
 import React from "react";
 import { PopupModal, useCalendlyEventListener } from "react-calendly";
 
+// check wheather endpoint is a browser or not
+const isBrowser = typeof window !== "undefined";
+
 const Calendly = ({ isOpen, handleCalendly }) => {
   useCalendlyEventListener({
     onProfilePageViewed: () => console.log("onProfilePageViewed"),
@@ -15,7 +18,7 @@ const Calendly = ({ isOpen, handleCalendly }) => {
         url="https://calendly.com/gcjcaat464/30min"
         onModalClose={() => handleCalendly(false)}
         open={isOpen}
-        rootElement={document.getElementById("___gatsby")}
+        rootElement={isBrowser ? document.getElementById("___gatsby") : null}
       />
     </div>
   );

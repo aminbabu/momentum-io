@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import Navbar from "./Navbar";
 import NavMenu from "./NavMenu";
 
+const isBrowser = typeof window !== "undefined";
+
 const Header = ({ theme, scrollPosition }) => {
   const [openNav, setOpenNav] = useState(false);
 
@@ -14,6 +16,8 @@ const Header = ({ theme, scrollPosition }) => {
   };
 
   useEffect(() => {
+    if (!isBrowser) return;
+
     if (openNav) {
       document.body.classList.add("overflow-hidden");
     } else {
